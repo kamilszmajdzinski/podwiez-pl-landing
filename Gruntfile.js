@@ -23,7 +23,7 @@ module.exports = function (grunt) {
           cssmin: {
             target: {
               files: {
-                'build/css/main.css': ['scss/build.scss']
+                'build/css/main.css': ['css/main.css']
               }
             }
           },
