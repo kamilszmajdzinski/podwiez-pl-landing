@@ -15,6 +15,7 @@
 
     .newsletter{
         text-align: center;
+        
         p{
             margin-top: 4em;
             font-size: 1.2em;
@@ -24,7 +25,7 @@
         }
 
         form {
-            font-family: $cabin;
+            
             background-color: white;
             border-radius: 40px;
             
@@ -33,6 +34,7 @@
                 padding: 0.8em 1em;
                 border-radius: 40px;
                 outline: none;
+                font-family: $cabin;
             }
 
             input[type = button]{
@@ -64,6 +66,7 @@
                 color: rgba(255, 255, 255, 0.8);
                 margin: 0.5em;
                 transition: 0.5s ease;
+                
             }
 
             a:hover{
@@ -86,12 +89,14 @@
                 width: 5em;
                 align-self: center;
                 margin-right: 4em;
+                text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
             }
 
             i {
                 font-size: 5em;
                 color: white;
                 transition: 0.5s ease;
+                text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
             }
 
             i:hover{

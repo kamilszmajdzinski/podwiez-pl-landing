@@ -66,54 +66,82 @@ html, body {
 
 
 .mainSection {
-    width: 70%;
-   background-color: white;
-   margin: 0 auto;
-   display: flex;
-   min-width: 800px;
-   
-    
-    h1{
-        margin: 0;
-        font-size: 3em;
-    }
+    display: flex;
+    flex-wrap: wrap;
 
     .mainSectiontext{
+        flex-grow: 3;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-right: 5em;
-        padding-left: 3em;
-        flex-grow: 3;
-        min-width: 460px;
-        
+        margin-left: 4em;
+        min-width: 250px;
+        flex-shrink: 2;
+        h1{
+            font-size: 3em;
+        }
 
     }
 
     .mainSectionImage{
-        flex-grow: 2;
-        img {
-            display: block;
-            margin-top: 2em;
-            margin-bottom: 4em;
-        }
+        flex-grow: 1;
+        flex-shrink: 1;
+        margin-bottom: 4em;
+        margin-top: 3em;
+        margin-right: 2em;
+
     }
-
-
 }
 
+@media only screen and (max-width: 1200px) {
+    .header{
+        justify-content: center;
+        img{
+            width: 40%;
+        }
+    }
+    .mainSection .mainSectiontext{
+        width: 30%;
+    }
 
-
-
-@media (max-width: 1100px){
-    .mainSectionImage {
+    .mainSection .mainSectionImage{
+        
         img{
             width: 70%;
         }
     }
+}
 
-    .mainSection .mainSectiontext{
-        padding-right: 3em;
-    }
+@media only screen and (max-width: 783px) {
+    .mainSection {
+        .mainSectiontext{
+            align-items: center;
+            margin: 0 4em; 
+        }
+        
+        .mainSectionImage{
+            text-align: center;
+            margin: 3em 4em;
+            img{
+                width: 40%;
+            }
+        }
+    }   
+}
 
+@media only screen and (max-width: 500px) {
+    .mainSection {
+        .mainSectiontext{
+            align-items: center;
+            margin: 0 2em; 
+        }
+        
+        .mainSectionImage{
+            text-align: center;
+            margin: 3em 4em;
+            img{
+                width: 70%;
+            }
+        }
+    }   
 }
