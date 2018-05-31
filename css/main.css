@@ -247,3 +247,46 @@ html, body {
   background-color: #00171F;
   color: white;
 }
+.footerSection .links {
+  display: flex;
+  width: 60%;
+}
+.footerSection .links .siteMap {
+  margin: 2em;
+}
+.footerSection .links .siteMap p {
+  color: white;
+}
+.footerSection .links .siteMap a {
+  text-decoration: none;
+  display: block;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0.5em;
+  transition: 0.5s ease;
+}
+.footerSection .links .siteMap a:hover {
+  color: white;
+}
+.footerSection .footer {
+  display: flex;
+  flex-direction: column;
+}
+.footerSection .footer .footerImg {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3em;
+  margin-top: 3em;
+}
+.footerSection .footer .footerImg img {
+  width: 5em;
+  align-self: center;
+  margin-right: 4em;
+}
+.footerSection .footer .footerImg i {
+  font-size: 5em;
+  color: white;
+  transition: 0.5s ease;
+}
+.footerSection .footer .footerImg i:hover {
+  color: #005491;
+}
