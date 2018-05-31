@@ -1,0 +1,35 @@
+.partnersSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+.partnersInfo{
+    padding: 5em 4em;
+    p{
+        margin-bottom: 5em;
+    }
+
+    #viewMore {
+        width: 300px;
+    }
+}
+
+.partners{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .partner{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 30%;
+       img{
+           width: 80%;
+           align-self: center;
+       }
+    }
+    
+}
+
+}

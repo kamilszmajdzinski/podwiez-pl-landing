@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+@import './variables';
+$cabin: 'Cabin', sans-serif;
+
+
 html, body {
     margin: 0;
     background-color: #003459;
-    font-family: 'Poppins', sans-serif;
+    font-family: $cabin;
 }
 
 .container{
@@ -10,6 +15,39 @@ html, body {
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
     margin: 2.5em;
     background-color: white;
+}
+
+.button {
+    width: 140px;
+    border: 2px solid $blue-2;
+    padding: 0.9em;
+    padding-left: 1.5em;
+    text-decoration: none;
+    color: $blue-1;
+    transition: 0.5s ease;
+    border-radius: 25px;
+    position: relative;
+
+    i {
+        display: inline;
+        margin-left: 1em;
+        position: absolute;
+        transition: 0.5s ease;
+    }
+
+}
+
+
+
+.button:hover{
+    background-color: $blue-1;
+    color: white;
+    border: 2px solid $blue-1;
+
+    & i {
+       transform: translateX(20px)
+    }
+
 }
 
 
@@ -28,14 +66,16 @@ html, body {
 
 
 .mainSection {
-    width: 80%;
+    width: 70%;
    background-color: white;
    margin: 0 auto;
    display: flex;
-   font-family: 'Cabin', sans-serif;
+   min-width: 800px;
+   
     
     h1{
         margin: 0;
+        font-size: 3em;
     }
 
     .mainSectiontext{
@@ -43,17 +83,37 @@ html, body {
         flex-direction: column;
         justify-content: center;
         padding-right: 5em;
-        *{
-            display: block;
-        }
+        padding-left: 3em;
+        flex-grow: 3;
+        min-width: 460px;
+        
 
     }
 
     .mainSectionImage{
+        flex-grow: 2;
         img {
-            margin: 2em;
+            display: block;
+            margin-top: 2em;
+            margin-bottom: 4em;
         }
     }
 
+
+}
+
+
+
+
+@media (max-width: 1100px){
+    .mainSectionImage {
+        img{
+            width: 70%;
+        }
+    }
+
+    .mainSection .mainSectiontext{
+        padding-right: 3em;
+    }
 
 }

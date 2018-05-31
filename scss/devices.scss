@@ -1,0 +1,28 @@
+.devicesSection{
+    display: flex;
+    
+
+    .devicesText{
+        flex-grow: 2;
+        margin: 3em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .devicesPhotos {
+        flex-grow: 3;
+        display: flex;
+        position: relative;
+        margin: 3em;
+
+        #iphone {
+            position: absolute;
+            height: 50%;
+            align-self: center; 
+        }
+
+    }
+
+
+}
