@@ -1,0 +1,51 @@
+.footerBackground{
+    background: url('https://images.unsplash.com/photo-1501823419255-f27cdc6fde3e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6fe92a3299e86920cace69124ee62c3a&auto=format&fit=crop&w=1500&q=80');
+    background-position: center;
+    background-repeat:  no-repeat;
+    overflow: hidden;
+    background-size: cover;
+}
+
+.footerSection{
+    background-color: rgba($color: $blue-2, $alpha: 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .newsletter{
+        text-align: center;
+        p{
+            margin-top: 4em;
+            font-size: 1.2em;
+            color: white;
+            text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+            
+        }
+
+        form {
+            font-family: $cabin;
+            background-color: white;
+            border-radius: 40px;
+            
+            input {
+                border: none;
+                padding: 0.8em 1em;
+                border-radius: 40px;
+                outline: none;
+            }
+
+            input[type = button]{
+                background-color: $blue-2;
+                color: white;
+                transition: 0.5s ease;
+            }
+            input[type = button]:hover{
+                background-color: $blue-1;
+                color:  white;
+                
+            }
+        }
+    }
+
+}
