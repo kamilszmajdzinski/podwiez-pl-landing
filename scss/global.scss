@@ -134,12 +134,13 @@ html, body {
 
 @media only screen and (max-width: 500px) {
     .mainSection {
-        
         grid-template-areas: 
             "text"
             "image"
             "image";
+
         .mainSectiontext{
+            justify-content: center;
             align-items: center;
             margin: 0 2em; 
         }
@@ -147,10 +148,7 @@ html, body {
         .mainSectionImage{
             text-align: center;
             
-            margin: 1em 4em;
-            img{
-                
-            }
+            margin: 2em 4em;
         }
     }   
 }

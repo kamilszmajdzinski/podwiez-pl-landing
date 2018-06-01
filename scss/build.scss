@@ -134,12 +134,13 @@ html, body {
 
 @media only screen and (max-width: 500px) {
     .mainSection {
-        
         grid-template-areas: 
             "text"
             "image"
             "image";
+
         .mainSectiontext{
+            justify-content: center;
             align-items: center;
             margin: 0 2em; 
         }
@@ -147,10 +148,7 @@ html, body {
         .mainSectionImage{
             text-align: center;
             
-            margin: 1em 4em;
-            img{
-                
-            }
+            margin: 2em 4em;
         }
     }   
 }
@@ -195,6 +193,58 @@ html, body {
     }
 }
 
+}
+
+@media only screen and (max-width: 1000px) {
+    .descriptionBackground{
+    .descriptionSection{
+
+        
+
+        .descriptionPhoto {
+            width: 80%;
+            height: 500px;
+            margin-left: 2em;
+        }
+
+        .descriptionInfo{
+            transform: translateX(-100px);
+            width:80%;
+            margin-right: 1em;
+        }
+    }
+}
+}
+
+@media only screen and (max-width: 800px) {
+    .descriptionBackground{
+    .descriptionSection{
+
+        .descriptionPhoto {
+            display: none;
+        }
+
+        .descriptionInfo{
+            transform: translateX(0px);
+            width:80%;
+            margin:4em 2em;
+        }
+    }
+}
+}
+
+@media only screen and (max-width: 800px) {
+    .descriptionBackground{
+    .descriptionSection{
+
+        .descriptionInfo{
+            transform: translateX(0px);
+            width:80%;
+            margin:4em 0.5em;
+            text-align: center;
+        }
+    }
+}
 }
 .partnersSection{
     display: flex;
