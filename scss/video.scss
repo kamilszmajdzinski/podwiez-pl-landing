@@ -10,30 +10,44 @@
         justify-content: center;
         align-items: center;
 
-        i{
-            font-size: 5em;
-            color: white;
-            margin-top: 3em ;
-            text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
-            transition: 0.5s ease;
-        }
-        
-        i:hover{
-           color: $blue-1;
-        }
+        .video{
 
-        p{
-            color: white;
-            font-size: 2em;
-            margin-bottom: 5em;
-            text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+            text-align: center;
+
+            i{
+                font-size: 5em;
+                color: white;
+                margin-top: 3em ;
+                text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+                transition: 0.5s ease;
+            }
             
-        }
+            i:hover{
+            color: $blue-1;
+            }
 
+            p{
+                color: white;
+                font-size: 2em;
+                margin-bottom: 5em;
+                text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+                
+            }
+        }
     }
 
 }
 
 
+@media only screen and (max-width: 500px) {
+    .videoBackground .videoSection .video {
+        i{
+            font-size: 3em;
+        }
 
+        p{
+            font-size: 1em;
+        }
+    }
+}
 
