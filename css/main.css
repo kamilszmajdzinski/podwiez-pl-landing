@@ -85,27 +85,33 @@ html, body {
   }
 }
 @media only screen and (max-width: 783px) {
-  .mainSection {
+  .container {
+    margin: 1.5em;
+  }
+  .container .mainSection {
     grid-template-areas: "text image";
   }
-  .mainSection .mainSectiontext {
+  .container .mainSection .mainSectiontext {
     align-items: center;
     margin: 0 4em;
   }
-  .mainSection .mainSectionImage {
+  .container .mainSection .mainSectionImage {
     text-align: center;
   }
 }
 @media only screen and (max-width: 500px) {
-  .mainSection {
+  .container {
+    margin: 0.5em;
+  }
+  .container .mainSection {
     grid-template-areas: "text" "image" "image";
   }
-  .mainSection .mainSectiontext {
+  .container .mainSection .mainSectiontext {
     justify-content: center;
     align-items: center;
     margin: 0 2em;
   }
-  .mainSection .mainSectionImage {
+  .container .mainSection .mainSectionImage {
     text-align: center;
     margin: 2em 4em;
   }
@@ -428,4 +434,21 @@ html, body {
 }
 .footerSection .footer .footerImg i:hover {
   color: #005491;
+}
+
+@media only screen and (max-width: 800px) {
+  .footerBackground .footerSection .links {
+    width: 90%;
+  }
+  .footerBackground .footerSection .links .siteMap {
+    margin: 0.5em;
+  }
+
+  .footer .footerLogo {
+    text-align: center;
+  }
+  .footer .footerLogo img {
+    width: 80%;
+    object-fit: contain;
+  }
 }

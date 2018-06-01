@@ -106,3 +106,25 @@
     }
 
 }
+
+@media only screen and (max-width: 800px){
+
+    .footerBackground .footerSection 
+    
+    .links{
+        width: 90%;
+        .siteMap{
+            margin: 0.5em;
+        }
+    }
+
+    .footer .footerLogo{
+        text-align: center;
+        img{
+            width: 80%;
+        object-fit: contain;
+        }
+        
+    }
+
+}
