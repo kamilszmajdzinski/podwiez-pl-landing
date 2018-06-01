@@ -176,12 +176,15 @@ html, body {
   }
 }
 .partnersSection {
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
+  grid-template-areas: "info partners";
 }
 .partnersSection .partnersInfo {
+  grid-area: info;
   padding: 5em 4em;
+  padding-right: 2em;
 }
 .partnersSection .partnersInfo p {
   margin-bottom: 5em;
@@ -190,6 +193,7 @@ html, body {
   width: 300px;
 }
 .partnersSection .partners {
+  grid-area: partners;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -205,6 +209,43 @@ html, body {
   align-self: center;
 }
 
+@media only screen and (max-width: 1000px) {
+  .partnersSection {
+    grid-template-areas: "info partners partners";
+  }
+}
+@media only screen and (max-width: 800px) {
+  .partnersSection {
+    grid-template-areas: "info" "partners";
+  }
+  .partnersSection .partnersInfo {
+    margin-right: 4em;
+    text-align: center;
+  }
+  .partnersSection .partners {
+    margin: 2em 4em;
+    width: auto;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .partnersSection .partnersInfo {
+    margin: 1em;
+    padding: 0;
+  }
+  .partnersSection .partnersInfo h1 {
+    font-size: 1.5em;
+  }
+  .partnersSection .partners {
+    margin: 1em;
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .partnersSection .partners .partner img {
+    width: 150px;
+    margin: 1em 0;
+  }
+}
 .videoBackground {
   background: url("https://images.unsplash.com/photo-1468818438311-4bab781ab9b8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8b66994c56826698f9a8deec0753d597&auto=format&fit=crop&w=1502&q=80");
 }

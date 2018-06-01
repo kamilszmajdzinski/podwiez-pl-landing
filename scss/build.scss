@@ -247,13 +247,15 @@ html, body {
 }
 }
 .partnersSection{
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
-   
+   grid-template-areas: "info partners";
 
 .partnersInfo{
+    grid-area: info;
     padding: 5em 4em;
+    padding-right: 2em;
     p{
         margin-bottom: 5em;
     }
@@ -264,6 +266,7 @@ html, body {
 }
 
 .partners{
+    grid-area: partners;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -280,6 +283,60 @@ html, body {
     
 }
 
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .partnersSection{
+        grid-template-areas: "info partners partners";
+  
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .partnersSection{
+        grid-template-areas:
+         "info"
+         "partners";
+        .partnersInfo{
+            margin-right: 4em;
+            text-align: center;
+        }
+
+        .partners{
+            margin: 2em 4em;
+            width: auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .partnersSection{
+       
+        
+        .partnersInfo{
+            margin: 1em;
+            padding: 0;
+
+            h1{
+                font-size: 1.5em;
+            }
+        }
+
+        .partners{
+            margin: 1em;
+            width: auto;
+            flex-direction: column;
+            align-items: center;
+            .partner{
+                img {
+                    width: 150px;
+                    margin: 1em 0;
+                }
+            }
+            
+        }
+    }
 }
 
 .videoBackground {
