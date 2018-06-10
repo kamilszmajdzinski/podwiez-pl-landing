@@ -1,3 +1,6 @@
+
+
 document.addEventListener("DOMContentLoaded", function(event) { 
-  console.log('loaded')
+  console.log('loadede')
+  document.getElementById('loading').style.display = "none"
 });
