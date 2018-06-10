@@ -7,7 +7,14 @@ module.exports = function (grunt) {
             dest: 'build/js/script.js',
           },
           scss: {
-              src: ['scss/global.scss', 'scss/description.scss', 'scss/partners.scss', 'scss/video.scss', 'scss/devices.scss', 'scss/footer.scss', 'scss/loading.scss'],
+              src: 
+                ['scss/loading.scss',
+                 'scss/global.scss', 
+                 'scss/description.scss', 
+                 'scss/partners.scss', 
+                 'scss/video.scss', 
+                 'scss/devices.scss', 
+                 'scss/footer.scss'], 
               dest: 'scss/build.scss'
           }
         },

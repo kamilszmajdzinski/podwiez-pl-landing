@@ -472,7 +472,6 @@ html, body {
   justify-content: center;
   align-items: center;
   z-index: 999;
-  transition: 1s ease;
 }
 
 .spinner {
