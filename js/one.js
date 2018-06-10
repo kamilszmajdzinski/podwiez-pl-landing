@@ -1,9 +1,3 @@
-import React from 'react'
-
-export default () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+document.addEventListener("DOMContentLoaded", function(event) { 
+  console.log('loaded')
+});

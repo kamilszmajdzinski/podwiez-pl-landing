@@ -80,6 +80,12 @@ html, body {
     width: 40%;
   }
 
+  .mainSection .mainSectiontext {
+    padding-right: 2em;
+  }
+  .mainSection .mainSectiontext h1 {
+    font-size: 2em;
+  }
   .mainSection .mainSectionImage img {
     width: 90%;
   }
@@ -117,7 +123,7 @@ html, body {
   }
 }
 .descriptionBackground {
-  background: url("https://images.unsplash.com/photo-1500893099951-bfbcb107cd0b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f518e33095e8acffff04c182bb656cc3&auto=format&fit=crop&w=1500&q=80");
+  background: url("../../assets/2.jpg");
 }
 .descriptionBackground .descriptionSection {
   display: flex;
@@ -196,7 +202,7 @@ html, body {
   margin-bottom: 5em;
 }
 .partnersSection .partnersInfo #viewMore {
-  width: 300px;
+  padding-left: 0.9em;
 }
 .partnersSection .partners {
   grid-area: partners;
@@ -253,7 +259,8 @@ html, body {
   }
 }
 .videoBackground {
-  background: url("https://images.unsplash.com/photo-1468818438311-4bab781ab9b8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8b66994c56826698f9a8deec0753d597&auto=format&fit=crop&w=1502&q=80");
+  background: url("../../assets/1.jpg");
+  background-position: center;
 }
 .videoBackground .videoSection {
   background-color: rgba(0, 84, 145, 0.5);
@@ -347,7 +354,7 @@ html, body {
   }
 }
 .footerBackground {
-  background: url("https://images.unsplash.com/photo-1501823419255-f27cdc6fde3e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6fe92a3299e86920cace69124ee62c3a&auto=format&fit=crop&w=1500&q=80");
+  background: url("../../assets/3.jpg");
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
